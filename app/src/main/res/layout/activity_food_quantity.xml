@@ -1,9 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".FoodQuantity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/ngofood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="NGO Food Quantity in Person"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="132dp" />
+
+
+    <EditText
+        android:id="@+id/ngofoodGravy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="Enter quantity of Dal/Gravy"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/ngofoodBread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="Enter quantity of Rice/Bread"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/animalfood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Animal Food Quantity in Kgs" />
+
+    <EditText
+        android:id="@+id/animalfooditem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="Enter animal food quantity"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/submitFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="SUBMIT" />
+</LinearLayout>

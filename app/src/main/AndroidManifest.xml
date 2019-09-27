@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NGOActivity"></activity>
+        <activity android:name=".MessListFeedback"></activity>
+        <activity android:name=".MessListChoose" />
+        <activity android:name=".FeedbackActivity" />
+        <activity android:name=".NGOActivity" />
         <activity android:name=".AnimalActivity" />
         <activity android:name=".UpdateProfileActivity" />
         <activity android:name=".FoodQuantity" />
