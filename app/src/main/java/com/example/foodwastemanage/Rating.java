@@ -1,6 +1,15 @@
 package com.example.foodwastemanage;
 
 public class Rating {
+
+
+    private String user_name;
+    private Float rate;
+
+    public Rating(String user_name, Float rate) {
+        this.user_name = user_name;
+        this.rate = rate;
+    }
     public String getUser_name() {
         return user_name;
     }
@@ -17,7 +26,6 @@ public class Rating {
         this.rate = rate;
     }
 
-    private String user_name;
-    private Float rate;
+
 
 }

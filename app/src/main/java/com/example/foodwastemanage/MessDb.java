@@ -7,7 +7,15 @@ public class MessDb {
     private Integer ngoGravy;
     private Integer ngoBread;
     private Integer animalFood;
-    private Timestamp time;
+    private String time;
+
+    public MessDb(String userName, Integer ngoGravy, Integer ngoBread, Integer animalFood, String time) {
+        this.userName = userName;
+        this.ngoGravy = ngoGravy;
+        this.ngoBread = ngoBread;
+        this.animalFood = animalFood;
+        this.time = time;
+    }
 
     public String getUserName() {
         return userName;
@@ -41,11 +49,11 @@ public class MessDb {
         this.animalFood = animalFood;
     }
 
-    public Timestamp getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(Timestamp time) {
+    public void setTime(String time) {
         this.time = time;
     }
 }

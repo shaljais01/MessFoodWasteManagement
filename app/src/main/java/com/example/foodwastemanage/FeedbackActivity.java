@@ -29,6 +29,7 @@ public class FeedbackActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 rate.setText("Happy thank you for feedback");
+
                 done.setVisibility(View.VISIBLE);
             }
         });
