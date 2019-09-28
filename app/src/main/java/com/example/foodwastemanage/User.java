@@ -3,37 +3,36 @@ package com.example.foodwastemanage;
 
 public class User
 {
-    private String username;
+    String username;
+    String password;
+    String usertype;
+    String photo;
+    String addressPin;
+    String addressLocality;
+    String addressState;
+    String addressCity;
+    String longitude;
+    String latitude;
+    String phone;
 
-    private String langitude;
-    public String longitude;
-
-    public String getLangitude() {
-        return langitude;
+    public User() {
     }
 
-    public String getLongitude() {
-        return longitude;
+    public User(String username, String password, String usertype, String photo, String addressPin, String addressLocality, String addressState,
+                String addressCity, String longitude, String latitude, String phone)
+    {
+        this.username=username;
+        this.password=password;
+        this.usertype=usertype;
+        this.photo=photo;
+        this.addressPin=addressPin;
+        this.addressLocality=addressLocality;
+        this.addressState=addressState;
+        this.addressCity=addressCity;
+        this.longitude=longitude;
+        this.latitude=latitude;
+        this.phone=phone;
     }
-
-    public Boolean getStatus() {
-        return status;
-    }
-
-    public void setStatus(Boolean status) {
-        this.status = status;
-    }
-
-    private Boolean status;
-    public String getPhone() {
-        return Phone;
-    }
-
-    public void setPhone(String phone) {
-        Phone = phone;
-    }
-
-    private String Phone;
 
     public String getUsername() {
         return username;
@@ -99,12 +98,27 @@ public class User
         this.addressCity = addressCity;
     }
 
-    private String password;
-    private String usertype;
-    private String photo;
-    private String addressPin;
-    private String addressLocality;
-    private String addressState;
-    private String addressCity;
+    public String getLongitude() {
+        return longitude;
+    }
 
+    public void setLongitude(String longitude) {
+        this.longitude = longitude;
+    }
+
+    public String getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(String latitude) {
+        this.latitude = latitude;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 }

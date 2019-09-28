@@ -14,7 +14,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView_photo"
         android:layout_width="285dp"
         android:layout_height="128dp"
         tools:srcCompat="@tools:sample/backgrounds/scenic[1]" />
@@ -40,6 +40,14 @@
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editText_location"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Location"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/editText_pin"

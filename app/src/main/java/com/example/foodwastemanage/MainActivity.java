@@ -11,6 +11,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button mess,ngo,animal;
+    String m="Mess";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this,Main2Activity.class);
-                intent.putExtra("type","Mess");
+                  intent.putExtra("type",m);
 
                 MainActivity.this.startActivity(intent);
             }
