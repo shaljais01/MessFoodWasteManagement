@@ -46,17 +46,17 @@ public class LoginActivity extends AppCompatActivity {
                                     if(user_name.getText().toString().equals(user.getUsername()) && password.getText().toString().equals(user.getPassword()))
                                     {
                                       //Toast.makeText(LoginActivity.this,"Sucessful",Toast.LENGTH_SHORT).show();
-                                        if (type4 == "Mess") {
+                                        if (type4.equals("Mess")) {
                                             Intent intent=new Intent(LoginActivity.this,MessActivity.class);
                                             intent.putExtra("userName",userName);
                                             LoginActivity.this.startActivity(intent);
 
-                                        } else if (type4 == "NGO") {
+                                        } else if (type4 .equals("NGO")) {
                                             Intent intent=new Intent(LoginActivity.this,NGOActivity.class);
                                             intent.putExtra("userName",userName);
                                             LoginActivity.this.startActivity(intent);
 
-                                        } else if (type4 == "Animal") {
+                                        } else if (type4.equals("Animal")) {
                                             Intent intent=new Intent(LoginActivity.this,AnimalActivity.class);
                                             intent.putExtra("userName",userName);
                                             LoginActivity.this.startActivity(intent);

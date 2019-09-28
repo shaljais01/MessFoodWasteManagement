@@ -35,7 +35,6 @@ public class MessActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(MessActivity.this,UpdateProfileActivity.class);
                 intent.putExtra("userName",userName);
-                intent.putExtra("type","Mess");
                 MessActivity.this.startActivity(intent);
 
             }
